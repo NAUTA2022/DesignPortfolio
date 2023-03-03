@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Screen Controls</title>
+<link rel="stylesheet" href="style3d.css">
+<meta charset="UTF-8">
+  <script src="js/aframe-master-v1.3.0.min.js"></script>
+  <script src="js/aframe-environment-component.min.js"></script>
+  <script src="js/extended-wasd-controls.js"></script>
+  <script src="js/joystick.js"></script>
+
+
+<style>
+</style>
+
+
+</head>
+
+            <a-scene joystick vr-mode-ui="enabled: false">
+    <!--Habitación-->
+              
+              <!--techo-->
+              <a-box position="0 10 -10" rotation="90 0 0"  width="30" height="30" color="#1E1E1E"></a-box>
+              <!--paredes del lugar-->
+              <a-box position="0 5 -25" rotation="0 180 0"  width="30" height="10" color="#453334"></a-box>
+              <a-box position="0 5 5" rotation="0 180 0"  width="30" height="10" color="#453334"></a-box>
+              <a-box position="-15 5 -10" rotation="0 90 0"  width="30" height="10" color="#453334"></a-box>
+              <a-box position="15 5 -10" rotation="0 90 0"  width="30" height="10" color="#453334"></a-box>
+              <!--suelo-->
+              <a-plane position="0 0 -10" rotation="-90 0 0" width="30" height="30" color="#1C0405"></a-plane>
+
+              <!--Muebles-->
+              <a-box position="11.553 1.522 -10.987" rotation="0 0 0"  scale="6.773 3.147 1.000" color="#000000"></a-box>
+              <a-box position="8.724 1.508 -14.969" rotation="0 0 0"  scale="1.000 3.144 7.113" color="#000000"></a-box>
+              <a-box position="9.222 3.216 -14.475" rotation="0 0 0"  scale="2.425 0.297 8.114" color="#1C0405"></a-box>
+              <a-box position="9.004 3.850 -14.097" rotation="0 0 0"  scale="0.046 1.000 1.428" color="#000000"></a-box>
+              <a-box position="9.499 3.381 -14.086" rotation="0 0 0"  scale="1 0.105 1.419" color="#ffffff"></a-box>
+
+              <a-box position="-8.781 0.4 -10.272" rotation="0 0 0"  scale="8.000 1 3.000" color="#4b4d35"></a-box>
+              <a-box position="-8.781 2 -9.113" rotation="0 0 0"  scale="8.000 2.248 0.682" color="#7f8257"></a-box>
+              <a-box position="-12.3 1.5 -10.537" rotation="0 0 0"  scale="1.121 1 2.369" color="#7f8257"></a-box>
+              <a-box position="-5.3 1.5 -10.537" rotation="0 0 0"  scale="1.121 1 2.369" color="#7f8257"></a-box>
+
+              <a-box position="-8.781 1 -15.730" rotation="0 0 0"  scale="8.000 1 3.000" color="#5f5f5f"></a-box> 
+
+              <a-box position="-8.781 0.4 -21.091" rotation="0 0 0"  scale="8.000 1 3.000" color="#4b4d35"></a-box>
+              <a-box position="-8.781 2 -22.2" rotation="0 0 0"  scale="8.000 2.248 0.682" color="#7f8257"></a-box>
+              <a-box position="-12.3 1.5 -20.8" rotation="0 0 0"  scale="1.121 1 2.369" color="#7f8257"></a-box>
+              <a-box position="-5.3 1.5 -20.8" rotation="0 0 0"  scale="1.121 1 2.369" color="#7f8257"></a-box>
+
+
+
+
+              <a-box position="0 3 4.8" rotation="0 180 0"  width="6" height="6" color="#000000"></a-box>
+              <a-box position="-1.5 4 4.7" rotation="0 180 0"  width="2.6" height="0.5" color="#ffdf40" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  index.html;  title:  Aku no ko;  visualAspectEnabled:  false"></a-box>
+              <a-box position="1.5 4 4.7" rotation="0 180 0"  width="2.6" height="0.5" color="#ffdf40" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  index.html;  title:  Aku no ko;  visualAspectEnabled:  false"></a-box>
+
+
+              <a-box position="0 3 -24.8" rotation="0 180 0"  width="6" height="6" color="#000000"></a-box>
+              <a-box position="-1.5 4 -24.7" rotation="0 180 0"  width="2.6" height="0.5" color="#ffdf40" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href: room.html ;  title:  Aku no ko;  visualAspectEnabled:  false"></a-box>
+              <a-box position="1.5 4 -24.7" rotation="0 180 0"  width="2.6" height="0.5" color="#ffdf40" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href: room.html ;  title:  Aku no ko;  visualAspectEnabled:  false"></a-box>
+
+             
+
+            
+              <a-box position="14 1 -2.9" rotation="0 0 0" scale="2 2 10" color="#000000"></a-box>
+
+              <a-box position="-14 1 -2.9" rotation="0 0 0" scale="2 2 10" color="#000000"></a-box>
+
+              <a-box position="9.058 1.069 3.931" scale="12.02 2.176 1.734" color="#808b8f"></a-box>
+              <a-box position="8.8 1.1 3.8" scale="10.02 2.176 1.2" color="#28292b"></a-box>
+              <a-cylinder scale="0.2 1.87491 0.2" position="4.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="8.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="12.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-icosahedron position="4.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>
+              <a-icosahedron position="8.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>   
+              <a-icosahedron position="12.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>            
+
+
+              <a-box position="-9.058 1.069 3.931" scale="12.02 2.176 1.734" color="#808b8f"></a-box>
+              <a-box position="-8.8 1.1 3.8" scale="10.02 2.176 1.2" color="#28292b"></a-box>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-4.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-8.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-12.5 2.949 3.69643" color="#493400"></a-cylinder>
+              <a-icosahedron position="-4.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>
+              <a-icosahedron position="-8.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>   
+              <a-icosahedron position="-12.5 3.547 3.591" Scale="1.192 1 1" color="#596f43"></a-icosahedron>
+
+
+
+              <a-box position="9.058 1.069 -23.9" scale="12.02 2.176 1.734" color="#808b8f"></a-box>
+              <a-box position="8.8 1.1 -23.8" scale="10.02 2.176 1.2" color="#28292b"></a-box>
+              <a-cylinder scale="0.2 1.87491 0.2" position="4.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="8.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="12.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-icosahedron position="4.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>
+              <a-icosahedron position="8.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>   
+              <a-icosahedron position="12.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>            
+
+
+              <a-box position="-9.058 1.069 -23.9" scale="12.02 2.176 1.734" color="#808b8f"></a-box>
+              <a-box position="-8.8 1.1 -23.8" scale="10.02 2.176 1.2" color="#28292b"></a-box>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-4.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-8.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-cylinder scale="0.2 1.87491 0.2" position="-12.5 2.949 -23.8" color="#493400"></a-cylinder>
+              <a-icosahedron position="-4.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>
+              <a-icosahedron position="-8.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>   
+              <a-icosahedron position="-12.5 3.547 -23.8" Scale="1.192 1 1" color="#596f43"></a-icosahedron>   
+
+
+              <!--luces-->
+
+              <a-light type="point" intensity="0.5" position="8 5 2" color="#FCE2A4"></a-light>
+              <a-light type="point" intensity="0.5" position="-8 5 2" color="#FCE2A4"></a-light>
+              <a-light type="point" intensity="0.5" position="8 5 -8" color="#FCE2A4"></a-light>
+            
+              <a-light type="point" intensity="0.5" position="8 5 -22" color="#FCE2A4"></a-light>
+              <a-light type="point" intensity="0.5" position="-8 5 -22" color="#FCE2A4"></a-light>
+              <a-light type="point" intensity="0.5" position="-8 5 -8" color="#FCE2A4"></a-light>
+
+
+    <!--Links izquierda 1-->
+    <a-box position="-14.01 4 -0.1" rotation="0 90 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/HqMCLWB/instagram.jpg"; roughness:  100; repeat: 0.940></a-box>
+
+    <a-box position="-14 5.4 -2.1" rotation="0 90 0"  scale="0.2 0.2 0.1" color="#ffffff";
+    animation="property: object3D.position.y; to: 5.2; dir: alternate; dur: 3000; loop: true";
+    link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+   <!---->
+    
+   <a-box position="-14.01 4 -5.8" rotation="0 90 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/HqMCLWB/instagram.jpg"; roughness:  100; repeat: 0.940></a-box>
+
+    <a-box position="-14 5.4 -7.8" rotation="0 90 0"  scale="0.2 0.2 0.1" color="#ffffff";
+    animation="property: object3D.position.y; to: 5.2; dir: alternate; dur: 3000; loop: true";
+    link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+
+
+    <!--Links derecha 1-->
+    <a-box position="14.01 4 -0.1" rotation="0 270 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/HqMCLWB/instagram.jpg"; roughness:  100; repeat: 0.940></a-box>
+
+    <a-box position="14 5.4 2.1" rotation="0 270 0"  scale="0.2 0.2 0.1" color="#ffffff";
+    animation="property: object3D.position.y; to: 5.2; dir: alternate; dur: 3000; loop: true";
+    link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+   <!---->
+    
+   <a-box position="14.01 4 -5.8" rotation="0 270 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/HqMCLWB/instagram.jpg"; roughness:  100; repeat: 0.940></a-box>
+
+    <a-box position="14 5.4 -3.8" rotation="0 270 0"  scale="0.2 0.2 0.1" color="#ffffff";
+    animation="property: object3D.position.y; to: 5.2; dir: alternate; dur: 3000; loop: true";
+    link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+
+
+<!--text1-->
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Personal Projects
+
++                                                                                     +"
+  position="13 2 0"
+  rotation="-40 270 0"
+  ></a-entity>
+<!--text2-->
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Personal Projects
+
++                                                                                     +"
+  position="13 2 -5.8"
+  rotation="-40 270 0"
+  ></a-entity>
+
+
+
+<!--text5-->
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Personal Projects
+
++                                                                                     +"
+  position="-13 2 0"
+  rotation="-40 90 0"
+  ></a-entity>
+<!--text6-->
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Personal Projects
+
++                                                                                     +"
+  position="-13 2 -5.8"
+  rotation="-40 90 0"
+  ></a-entity>
+
+
+
+<!--text9 puerta-->
+<a-entity
+
+  geometry="primitive: plane; width: 6; height: auto"
+  material="color: #000000"
+  text="align: center; value: 
++                                                                              +
+
+Projects in Henry
+
++                                                                              +"
+  position="0 7 -24.19999"
+  rotation="0 0 0"
+  ></a-entity>
+<!--text10 puerta-->
+<a-entity
+
+  geometry="primitive: plane; width: 6; height: auto"
+  material="color: #000000"
+  text="align: center; value: 
++                                                                              +
+
+Exit
+
++                                                                              +"
+  position="0 7 4.19999"
+  rotation="0 180 0"
+  ></a-entity>
+<!--camara-->
+
+<a-camera position="0 4 0" cursor="downEvents:  ;  upEvents:  ;  rayOrigin:  mouse"
+look-controls="pointerLockEnabled:  true; magicWindowTrackingEnabled: false; reverseTouchDrag: true; touchEnabled: true">
+
+
+ <a-box position="0.2 -0.180 -0.150" rotation="-10 -170 0"  scale="0.1 0.1 0.150" color="#5D1F1F" animation="property: object3D.position.y; to: -0.190; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.190 -0.175 -0.235" rotation="-10 -170 90"  scale="0.140 0.140 0.03" color="#422F2F" animation="property: object3D.position.y; to: -0.185; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.188 -0.164 -0.277" rotation="-10 -170 90"  scale="0.123 0.123 0.05" color="#FFB9B9" animation="property: object3D.position.y; to: -0.174; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.138 -0.113 -0.332" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.123; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.184 -0.120 -0.293" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.130; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.224 -0.120 -0.295" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.130; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.12 -0.1655 -0.28.5" rotation="-10 -170 90"  scale="0.04 0.04 0.06" color="#FFB9B9" animation="property: object3D.position.y; to: -0.1755; dir: alternate; dur: 1500; loop: true"></a-box>
+
+
+ <a-cursor material="color: #000000; shader: flat" geometry="primitive: ring; radiusInner: 0; radiusOuter: 0.005"></a-cursor>
+ <a-entity cursor raycaster="fuseTimeout: 3000; far: 15; interval: 1000; objects: .clickable"
+ ></a-entity>
+
+ <a-entity
+  animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 500; from: 0.02 0.02 0.02; to: 0.1 0.1 0.1"
+  animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 500; from: 0.1 0.1 0.1; to: 0.02 0.02 0.02"
+  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 0.1 0.1 0.1"
+  cursor="fuse: true;"
+  material="color: #e4ffd9; shader: flat"
+  position="0 0 -1"
+  geometry="primitive: ring; radiusInner: 0.3; radiusOuter: 0.4"></a-entity>
+
+
+ </a-entity>
+
+
+<a-plane position="-0.170 0 -0.100" rotation="0 0 0"  scale="0.01 0.06 1" color="#000000" opacity="0.800" animation="property: object3D.position.y; to: -0.013; dir: alternate; dur: 2000; loop: true"
+></a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.053; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/dG6VF4S/instagram.png"
+></a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.043; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/CWBwxvm/telefono.pnghttps://i.ibb.co/DM39SQ2/correo.png"> </a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.033; dir: alternate; dur: 2000; loop: true"
+link=" position:-0.170 0 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/RSBqgLb/github.png"
+></a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.023; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/pLr1GkQ/LAB.jpg"
+></a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.013; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/chsBtT3/cuadrado.png"
+></a-plane>
+
+
+<a-light type="directional" intensity="0.91" position="-0.170 3.945 -0.047" color="#FCE2A4" angle= "22.19"></a-light>
+
+
+ </a-camera>
+
+
+            </a-scene>
+          
+      </body>
+
+
+</html>

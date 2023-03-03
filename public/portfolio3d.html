@@ -1,0 +1,284 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style3d.css">
+     <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
+
+  </head>
+
+
+<script>
+  AFRAME.registerComponent('change-color-on-hover', {
+    schema: {
+      color: {default: 'red'}
+    },
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;  // <a-box>
+      var defaultColor = el.getAttribute('material').color;
+
+      el.addEventListener('mouseenter', function () {
+        el.setAttribute('color', data.color);
+      });
+
+      el.addEventListener('mouseleave', function () {
+        el.setAttribute('color', defaultColor);
+      });
+    }
+  });
+
+
+</script>
+
+
+
+  <body>
+
+<a-scene>
+
+    <a-box color="red"; position="-20 4 -45" scale="3 3 3" change-color-on-hover="color: #2B8195"></a-box>
+
+
+
+    <!--Links a proyectos-->
+    <a-box position="30 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/HqMCLWB/instagram.jpg"; roughness:  100; repeat: 0.940></a-box>
+    <a-box position="33.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="33.2 1.7 -44.95" rotation="0 180 0"  scale="0.2 0.2 0.1" color="black"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="21.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+    <a-box position="22 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#495445" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/CKDK2cW/YouTube.jpg"></a-box>
+    <a-box position="25.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="25.2 1.7 -44.95" rotation="0 180 0"  scale="0.2 0.2 0.1" color="black"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="29.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+    <a-box position="38 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#495445" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/6XPvhpx/MA.png"></a-box>
+    <a-box position="41.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="41.2 1.7 -44.95" rotation="0 180 0"  scale="0.2 0.2 0.1" color="black"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://miasistente.netlify.app/;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="37.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+     
+      <!--techo-->
+      <a-box position="0 10 0" rotation="90 0 0"  width="100" height="100" color="#1E1E1E"></a-box>
+      <!--paredes del lugar-->
+      <a-box position="0 5 -50" rotation="0 180 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="0 5 50" rotation="0 180 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="-50 5 0" rotation="0 90 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="50 5 0" rotation="0 90 0"  width="100" height="10" color="#453334"></a-box>
+
+      
+
+      <!--animation-->
+
+      <a-box position="10 4 -45" rotation="0 180 0"  scale="3 3 3" color="#495445" animation="property: object3D.rotation.y; to: 360; dur: 5000; loop: true"></a-box>
+
+      <a-sphere position="-10 4 -45" rotation="0 180 0"  scale="2 2 2" color="#322e3e" animation="property: object3D.scale.x; to: 3; dir: alternate; dur: 3000; loop: true" ></a-sphere>
+
+      <a-cylinder position="0 4 -45" rotation="0 180 0"  scale="2 5 2" color="#5e2b57" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 2000; loop: true"></a-cylinder>
+
+
+      <a-box position="0 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="30 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-30 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      
+      <a-box position="0 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="30 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-30 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+
+      <a-box position="45 0.3 0" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="45 0.3 30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="45 0.3 -30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+
+      <a-box position="-45 0.3 0" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-45 0.3 30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-45 0.3 -30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+
+
+
+      <a-box position="45 6 -45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="-45 6 45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="45 6 45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="-45 6 -45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#1C0405"></a-plane>
+
+      
+
+
+      <a-light type="point" intensity="0.1" position="40 9 12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 0" color="#FCE2A4"></a-light>
+ 
+
+      <a-light type="point" intensity="0.1" position="-40 9 12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 0" color="#FCE2A4"></a-light>     
+
+
+
+
+      <a-light type="point" intensity="0.1" position="12 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="24 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="36 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-12 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-24 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-36 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="0 9 40" color="#FCE2A4"></a-light>
+ 
+
+      <a-light type="point" intensity="0.1" position="12 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="24 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="36 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-12 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-24 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-36 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="0 9 -40" color="#FCE2A4"></a-light>
+    
+
+
+ <a-camera position="0 4 0" cursor="downEvents:  ;  upEvents:  ;  rayOrigin:  mouse"
+look-controls="pointerLockEnabled:  true">
+ <a-box position="0.2 -0.180 -0.150" rotation="-10 -170 0"  scale="0.1 0.1 0.150" color="#5D1F1F" animation="property: object3D.position.y; to: -0.190; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.190 -0.175 -0.235" rotation="-10 -170 90"  scale="0.140 0.140 0.03" color="#422F2F" animation="property: object3D.position.y; to: -0.185; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.188 -0.164 -0.277" rotation="-10 -170 90"  scale="0.123 0.123 0.05" color="#FFB9B9" animation="property: object3D.position.y; to: -0.174; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.138 -0.113 -0.332" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.123; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.184 -0.120 -0.293" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.130; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.224 -0.120 -0.295" rotation="-10 -170 90"  scale="0.04 0.04 0.1" color="#FFB9B9" animation="property: object3D.position.y; to: -0.130; dir: alternate; dur: 1500; loop: true"></a-box>
+ <a-box position="0.12 -0.1655 -0.28.5" rotation="-10 -170 90"  scale="0.04 0.04 0.06" color="#FFB9B9" animation="property: object3D.position.y; to: -0.1755; dir: alternate; dur: 1500; loop: true"></a-box>
+
+
+
+ <a-cursor></a-cursor>
+ <a-entity cursor raycaster="far: 20; interval: 1000; objects: .clickable"
+ ></a-entity>
+
+ <a-entity cursor="fuse: true; fuseTimeout: 500"
+           position="0 0 -1"
+           geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+           material="color: white; shader: flat">
+ </a-entity>
+
+<a-plane position="0 0.08 -0.1" rotation="0 0 0"  scale="0.400 0.03 1" color="#000000" opacity="0.955" roughness="0.180"></a-plane>
+<a-plane position="-0.170 -0.010 -0.100" rotation="0 0 0"  scale="0.01 0.1 1" color="#000000" opacity="0.800" animation="property: object3D.position.y; to: -0.013; dir: alternate; dur: 2000; loop: true"
+></a-plane>
+
+<a-plane position="-0.170 -0.050 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.053; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/dG6VF4S/instagram.png"
+></a-plane>
+
+<a-plane position="-0.170 -0.040 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.043; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/CWBwxvm/telefono.pnghttps://i.ibb.co/DM39SQ2/correo.png"> </a-plane>
+
+<a-plane position="-0.170 -0.030 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.033; dir: alternate; dur: 2000; loop: true"
+link=" position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/RSBqgLb/github.png"
+></a-plane>
+
+<a-plane position="-0.170 -0.020 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.023; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/pLr1GkQ/LAB.jpg"
+></a-plane>
+
+<a-plane position="-0.170 -0.010 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: -0.013; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/chsBtT3/cuadrado.png"
+></a-plane>
+
+<a-plane position="-0.170 0 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0"  animation="property: object3D.position.y; to: -0.003; dir: alternate; dur: 2000; loop: true"
+link=" position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/CWBwxvm/telefono.png"
+></a-plane>
+
+<a-plane position="-0.170 0.010 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0"  animation="property: object3D.position.y; to: 0.007; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/RSBqgLb/github.png"
+></a-plane>
+
+<a-plane position="-0.170 0.020 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0" animation="property: object3D.position.y; to: 0.017; dir: alternate; dur: 2000; loop: true"
+link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/DM39SQ2/correo.png"
+></a-plane>
+
+<a-plane position="-0.170 0.030 -0.0999" rotation="0 0 0"  scale="0.008 0.008 0"  animation="property: object3D.position.y; to: 0.027; dir: alternate; dur: 2000; loop: true" link="position:-0.170 0.030 -0.0999; scale:0.008 0.008 0; href:  https://www.youtube.com/watch?v=LhCzror7jyk&list=OLAK5uy_muy8aad-9EHF5hLCOQ_fpGhUg-W6mVsqc;  title:  Aku no ko;  visualAspectEnabled:  false"; material src="https://i.ibb.co/dG6VF4S/instagram.png"
+></a-plane>
+
+<a-light type="directional" intensity="0.91" position="-0.170 3.945 -0.047" color="#FCE2A4" angle= "22.19"></a-light>
+
+
+ </a-camera>
+
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+  Bienvenido al Museo 3D.
+
+  En este museo virtual puedes moverte con libertad y ver las obras de Ulises Marin.
+
+  - muevete con 'w-a-s-d'.                                                 
+
+- Haz click en medio de pantalla                                   
+ para mover la camara y presiona 'Esc' para salir.
+
+  - En el menu flotante izquierdo puedes clickear los botones.
++                                                                                     +"
+  position="0 4 -3"
+  animation="property: object3D.position.y; to: 4.3; dir: alternate; dur: 4000; loop: true"
+  ></a-entity>
+
+<a-entity
+
+  geometry="primitive: plane; width: 8; height: auto"
+  material="color: #452d21; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Animations
+
++                                                                                     +"
+  position="0 1 -42"
+  rotation="-40 0 0"
+  ></a-entity>
+
+
+<a-entity
+
+  geometry="primitive: plane; width: 8; height: auto"
+  material="color: #452d21; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Personal Projects
+
++                                                                                     +"
+  position="30 1 -42"
+  rotation="-40 0 0"
+  ></a-entity>
+
+
+  <a-entity
+
+  geometry="primitive: plane; width: 8; height: auto"
+  material="color: #452d21; opacity: 0.7 "
+  text="align: center; value: 
++                                                                                     +
+
+Functions
+
++                                                                                     +"
+  position="-30 1 -42"
+  rotation="-40 0 0"
+  ></a-entity>
+
+    </a-scene>
+
+
+  </body>
+
+
+</html>

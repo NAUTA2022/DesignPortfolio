@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjetas con imágenes</title>
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <nav>
+  <ul class="menu">
+    <li class="item1"><a href="index.html">Home </a></li>
+    <li class="item2"><a href="about.html">About </a></li>
+    <li class="item3"><a href="https://www.linkedin.com/in/ulises-marin/">LinkedIn </a></li>
+    <li class="item4"><a href="#">3D Design </a></li>
+    <li class="item5"><a href="projects.html">Projects </a></li>
+    <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+</nav>
+
+
+<p class="title">Projects</p>
+<br>
+<br>
+    <div class="grid">
+      <div class="card">
+        <img src="./assets/Welcome.png" alt="Imagen 1" />
+      </div>
+      <div class="card">
+        <img src="./assets/products.png" alt="Imagen 2" />
+      </div>
+      <div class="card">
+        <img src="./assets/3fotos.png" alt="Imagen 3" />
+      </div>
+      <div class="card">
+        <img src="./assets/game.png" alt="Imagen 4" />
+      </div>
+      <div class="card">
+        <img src="./assets/gamebackpack.png" alt="Imagen 5" />
+      </div>
+      <div class="card">
+        <img src="./assets/gamebackpackbig.png" alt="Imagen 6" />
+      </div>
+      <div class="card">
+        <img src="./assets/Logocard.png" alt="Imagen 7" />
+      </div>
+      <div class="card">
+        <img src="./assets/Windows.png" alt="Imagen 8" />
+      </div>
+      <div class="card">
+        <img src="./assets/i1.png" alt="Imagen 9" />
+      </div>
+    </div>
+
+    <script>
+      const cards = document.querySelectorAll(".card");
+      cards.forEach((card) => {
+        card.addEventListener("click", () => {
+          card.classList.toggle("fullscreen");
+        });
+      });
+    </script>
+  </body>
+</html>

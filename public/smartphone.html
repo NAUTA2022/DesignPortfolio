@@ -1,0 +1,145 @@
+<html>
+<head>
+<link rel="stylesheet" href="style3d.css">
+<meta charset="UTF-8">
+  <script src="js/aframe-master-v1.3.0.min.js"></script>
+  <script src="js/aframe-environment-component.min.js"></script>
+  <script src="js/extended-wasd-controls.js"></script>
+  <script src="js/joystick.js"></script>
+</head>
+
+  
+      <body>
+            <a-scene joystick vr-mode-ui="enabled: false">
+              <!--Habitación-->
+
+              <!--techo-->
+              <a-box position="0 10 0" rotation="90 0 0"  width="10" height="10" color="#1E1E1E"></a-box>
+              <!--paredes del lugar-->
+              <a-box position="0 5 -5.5" rotation="0 180 0"  width="10" height="10" color="#453334"></a-box>
+              <a-box position="0 5 5.5" rotation="0 180 0"  width="10" height="10" color="#453334"></a-box>
+              <a-box position="-5.5 5 0" rotation="0 90 0"  width="10" height="10" color="#453334"></a-box>
+              <a-box position="5.5 5 0" rotation="0 90 0"  width="10" height="10" color="#453334"></a-box>
+              <!--suelo-->
+              <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#1C0405"></a-plane>
+
+          
+
+              <a-light type="point" intensity="2" position="0 5 0" color="#FCE2A4"></a-light>
+
+
+
+    <!--Links izquierda 1-->
+    <a-box position="5 4 0" rotation="0 90 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/4tzhcjb/image.png"; roughness:  100; repeat: 0.940></a-box>
+    <!--Links izquierda 2-->
+    <a-box position="-5 4 0" rotation="0 270 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/6XPvhpx/MA.png"; roughness:  100; repeat: 0.940></a-box>
+    <!--Links izquierda 3-->
+    <a-box position="0 4 -5" rotation="0 0 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/b7sN2R9/image.png"; roughness:  100; repeat: 0.940></a-box>
+    <!--Links izquierda 4-->
+    <a-box position="0 4 5" rotation="0 180 0"  scale="5 3 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/b7sN2R9/image.png"; roughness:  100; repeat: 0.940></a-box>
+    
+
+
+    <a-triangle position="0 4 -4.9" rotation="0 0 -90"  scale="0.5 0.5 1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://climate-um.netlify.app/;  title:  Aku no ko;  visualAspectEnabled:  false"></a-triangle>
+
+    <a-triangle position="0 4 4.9" rotation="0 180 -90"  scale="0.5 0.5 1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"></a-triangle>
+
+    <a-triangle position="-4.9 4 0" rotation="0 90 -90"  scale="0.5 0.5 1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.instagram.com/uli.a.marin/;  title:  Aku no ko;  visualAspectEnabled:  false"></a-triangle>
+
+    <a-triangle position="4.9 4 0" rotation="0 270 -90"  scale="0.5 0.5 1" color="#8f8f8f"  animation="property: object3D.position.y; to: 3.8; dir: alternate; dur: 3000; loop: true"; link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://diary-um.netlify.app/;  title:  Aku no ko;  visualAspectEnabled:  false"></a-triangle>
+
+
+
+
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0 "
+  text="align: center; value: 
++                              +
+
+Return to the 
+previous room
+
++                              +"
+  position="0 6 -5"
+  rotation="0 0 0"
+  ></a-entity>
+
+
+
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0 "
+  text="align: center; value: 
++                              +
+
+Return to the 
+previous room
+
++                              +"
+  position="0 6 5"
+  rotation="0 180 0"
+  ></a-entity>
+
+  <a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0 "
+  text="align: center; value: 
++                              +
+
+Return to the 
+previous room
+
++                              +"
+  position="-5 6 0"
+  rotation="0 90 0"
+  ></a-entity>
+
+
+
+<a-entity
+
+  geometry="primitive: plane; width: 4; height: auto"
+  material="color: #000000; opacity: 0 "
+  text="align: center; value: 
++                              +
+
+Return to the 
+previous room
+
++                              +"
+  position="5 6 0"
+  rotation="0 270 0"
+  ></a-entity>
+<!--camara-->
+
+<a-camera position="0 4 0" cursor="downEvents:  ;  upEvents:  ;  rayOrigin:  mouse"
+look-controls="pointerLockEnabled:  true; magicWindowTrackingEnabled: false; reverseTouchDrag: true; touchEnabled: true">
+
+ <a-cursor material="color: #000000; shader: flat" geometry="primitive: ring; radiusInner: 0; radiusOuter: 0.005"></a-cursor>
+ <a-entity cursor raycaster="fuseTimeout: 3000; far: 15; interval: 1000; objects: .clickable"
+ ></a-entity>
+
+ <a-entity
+  animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 0.02 0.02 0.02"
+  animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 0.1 0.1 0.1; to: 0.02 0.02 0.02"
+  animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 0.1 0.1 0.1"
+  cursor="fuse: true;"
+  material="color: #e4ffd9; shader: flat"
+  position="0 0 -1"
+  geometry="primitive: ring; radiusInner: 0.3; radiusOuter: 0.4"></a-entity>
+
+
+ </a-entity>
+
+ </a-camera>
+
+            </a-scene>
+          
+      </body>
+
+
+</html>
